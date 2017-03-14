@@ -1,0 +1,313 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  list-style-type:none;
+  text-decoration:none;
+}
+/* FIN RESET CSS */
+/* Polices */
+@font-face {
+	font-family: 'Conv_Roboto-Regular';
+	src: url('polices/Roboto-Regular.eot');
+	src: local('☺'), url('polices/Roboto-Regular.woff') format('woff'), url('polices/Roboto-Regular.ttf') format('truetype'), url('polices/Roboto-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_ShadedLarch';
+	src: url('polices/ShadedLarch.eot');
+	src: local('☺'), url('polices/ShadedLarch.woff') format('woff'), url('polices/ShadedLarch.ttf') format('truetype'), url('polices/ShadedLarch.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Bellerose';
+	src: url('polices/Bellerose.eot');
+	src: local('☺'), url('polices/Bellerose.woff') format('woff'), url('polices/Bellerose.ttf') format('truetype'), url('polices/Bellerose.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Image de fond */
+.fond{
+  margin:0 auto;
+  background:url("images/laptop_note_clock2500x1300_blanc.jpg") center no-repeat fixed;
+  background-size:cover;
+  height:100vh;
+ }
+/* Conteneur général */
+.conteneur{
+  width:90%;
+  max-width:960px;
+  margin:0 auto;
+  font-family: 'Conv_Roboto-Regular', sans-serif;
+  font-size:1.7vw;
+  max-font-size:12px;
+}
+/* Header */
+header{
+  background: url(images/keypad_cup_web.jpg) no-repeat;
+  background-position:right -50px;
+  padding-left:20px;
+  padding-top: 33px;
+  position:relative;
+  min-height:130px;
+  box-shadow: 0px 1px 5px #000;
+}
+div.titre{
+  float:left;
+}
+header h1{
+  font-family:'Conv_ShadedLarch', cursive;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom:0px;
+  color:white;
+}
+header h2{
+  font-family: 'Conv_Bellerose', sans-serif;
+  font-size: 36px;
+  line-height: -1px;
+  margin-top: -42px;
+  clear:both;
+  /* float:left; */
+  color:white;
+}
+.bouton_contact a{
+  margin-top:15px;
+  background:none;
+  color:white;
+  border:1px solid white;
+  border-radius:10px;
+  padding:6px 25px;
+  float:right;
+  margin-right:80px;
+  transition:0.3s;
+}
+.bouton_contact a:hover{
+  background:white;
+  color:#1f3a93;
+}
+/* Header nav */
+header nav{
+  clear:both;
+  position: absolute;
+  right:0;
+  bottom:0;
+}
+header nav li{
+  float:left;
+  display:inline-block;
+  width:160px;
+  height:35px;
+  margin:0;
+  line-height:35px;
+  text-align:center;
+  background:#f9bf3b;
+  border-left:1px solid #fad784;
+  transition:0.5s;
+}
+header nav li:first-child{
+  border:none;
+}
+header nav li:hover{
+  background:#4183d7;
+}
+header nav li{
+  transition:0.5s;
+}
+header nav li:hover a{
+  color:white;
+}
+header nav li a{
+  color:black;
+}
+.clear{
+  clear:both;
+}
+/* section */
+/* navigation principale */
+section nav{
+  width: 19%;
+  margin-top:10px;
+  float:left;
+  box-shadow:1px 1px 5px #000;
+}
+section nav li{
+  display:block;
+  height:38px;
+  background:#4183d7;
+  line-height:38px;
+  padding-left:5px;
+  border-bottom:1px solid #a2bde8;
+  transition:0.5s;
+}
+section nav li:last-child{
+  border:none;
+}
+section nav a{
+  color:white;
+  transition:0.5s;
+}
+section nav li:hover{
+  background:#f9bf3b;
+}
+section nav li:hover a{
+  color:black;
+}
+/* article (compétences) */
+/* titre */
+div.titre_competences{
+  float:left;
+  margin-top:10px;
+  margin-left:1.14%;
+  width:79.86%;
+  padding-left:-10px;
+}
+div.titre_competences h1{
+  text-align:center;
+  color:black;
+  font-family:'Conv_Bellerose',sans-serif;
+  font-size:54px;
+  height: 100px;
+  text-shadow:2px 2px 1px white; 
+  position:relative;
+  width: 100%;
+  overflow:hidden;
+}
+div.titre_competences h1 span{
+  position:absolute;
+  margin-left:auto;
+  margin-right:auto;
+  width:400px;
+  top:-50px;
+  left:0;
+  right:0;
+  background:rgba(255,255,255,0.5);
+  padding-left:10px;
+  padding-right:10px;
+  box-shadow: 0px 1px 5px #000;
+}
+/* conteneur carrés compétences */
+div.competences{
+/*   background:red; */
+  float:right;
+  width:81%;
+}
+.competences > div{
+  width:20%;
+/*   background:blue; */
+  float:left;
+}
+/* carrés compétences */
+.fond_competences{
+  width:100%;
+  box-shadow:1px 1px 5px #000;
+}
+.competence{
+  padding-left:5%;
+  padding-bottom:5%;
+  position:relative;
+  transition:0.2s;
+}
+.competence:hover{
+  z-index:2;
+  transform:scale(1.1);
+}
+/* carrés texte */
+.competence span.text1{
+  position:absolute;
+  top:5%;
+  left:10%;
+}
+.competence span.text2{
+  position:absolute;
+  top:65%;
+  right:5%;
+  text-align:right;
+}
+.competences span.text3{
+  position:absolute;
+  top:78%;
+  right: 5%;
+  text-align:right;
+}
+.illustrator span.text2, .php span.text2, .mysql span.text2{
+  position:absolute;
+  top:65%;
+  left:10%;
+  text-align:left;
+}
+.bootstrap span.text2, .drupal span.text2, .wordpress span.text2{
+  position:absolute;
+  top:78%;
+  right: 5%;
+  text-align:right;
+}
+/* carrés icônes */
+.icone_competence{
+  width:33%;
+  position:absolute;
+  top:30%;
+  left:36%;
+}
+.icone_competence img{
+  width:100%;
+}
+.html .icone_competence, .css .icone_competence, .javascript .icone_competence, .jquery .icone_competence, .bootstrap .icone_competence, .drupal .icone_competence{
+  width:30%;
+}
+.ajax .icone_competence, .php .icone_competence, .mysql .icone_competence, .wordpress .icone_competence{
+  width:60%;
+  left:23%;  
+}
+/* footer */
+footer{
+  min-height:150px;
+  background: url(images/keypad_cup_web_footer.jpg) right no-repeat;
+  background-position:right -435px;
+  padding-left:20px;
+  padding-top: 33px;
+  position:relative;
+  min-height:130px;
+  box-shadow: 0px -1px 5px #000;
+}
+footer img{
+  width:5.5%;
+  position:absolute;
+  top:35%;
+}
+.logo_linkedin{
+  left:35%;
+}
+footer span{
+  color:white;
+}
+footer span:hover{
+  text-decoration:underline;
+}
+.lien_facebook{
+  position:absolute;
+  top:45%;
+  left:10%;
+}
+.lien_linkedin{
+  position:absolute;
+  top:45%;
+  left:43%;
+}
+.mentions{
+  text-align:right;
+  position:absolute;
+  right:5%;
+  top:45%;
+}
+@media screen and (min-width: 1024px){
+  .conteneur{
+    font-size:16px;
+  }
+}
+
